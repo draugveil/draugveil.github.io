@@ -25,7 +25,7 @@ main,.home{min-height:100svh}.home{padding-top:clamp(72px,12vh,130px);padding-bo
 .platform-links a{font:14px 'Courier New',monospace;letter-spacing:1px;color:#e8e8e8;text-transform:uppercase;padding:14px 0;white-space:nowrap}.platform-links a:hover,.platform-links a:focus-visible{color:#a94b4b}
 @media(max-width:750px){.release-row,.release-row.expanded{flex-direction:column;gap:20px;align-items:center}.release{flex-basis:auto}.platform-links{justify-content:center}}
 
-@font-face{font-family:'Draugveil Script';src:url('assets/pinyon-script.ttf') format('truetype');font-weight:400;font-style:normal;font-display:block}
+@font-face{font-family:'Draugveil Script';src:url('pinyon-script.ttf') format('truetype');font-weight:400;font-style:normal;font-display:block}
 .game-menu a,.inner h2{font-family:'Draugveil Script',cursive;font-weight:400;letter-spacing:0;text-transform:none}
 .game-menu a{font-size:54px;line-height:1.25;padding:6px 30px 14px}.game-menu small{line-height:1.5;margin-top:4px}.inner h2{font-size:76px;line-height:1.3;margin-bottom:32px}
 .platform-links{flex-direction:column;align-items:flex-start;flex-wrap:nowrap;gap:10px}.platform-links a{text-transform:none;font-size:16px;letter-spacing:1px;padding:12px 0}

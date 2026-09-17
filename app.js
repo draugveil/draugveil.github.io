@@ -81,7 +81,7 @@ route();
 // Use normal compositing so the cursor remains visible over white artwork.
 const finePointer=window.matchMedia('(hover: hover) and (pointer: fine)');
 const cursorArt=new Image();
-cursorArt.src='assets/ruby-cursor-source.png';
+cursorArt.src='ruby-cursor-source.png';
 cursorArt.onload=()=>{
  const cursor=document.createElement('canvas');
  cursor.width=35;cursor.height=62;cursor.className='ruby-cursor';
