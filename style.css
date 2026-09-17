@@ -88,14 +88,13 @@ main,.home{min-height:100svh}.home{padding-top:clamp(72px,12vh,130px);padding-bo
 .phantom-lure-link{touch-action:manipulation;-webkit-touch-callout:none}
 .phantom-lure-link img{pointer-events:none}
 
-/* Upcoming live ritual. */
-.ceremonies-list{display:flex;justify-content:center;width:100%}
-.ceremony-event{display:flex;flex-direction:column;align-items:center;width:min(680px,100%);padding:34px 28px 36px;border-top:1px solid #b8b8b866;border-bottom:1px solid #b8b8b866;background:#080808d9;color:var(--ivory);transition:color .18s ease,background-color .18s ease}
-.ceremony-name{font-family:'Draugveil Script',cursive;font-size:clamp(44px,6vw,72px);font-weight:400;line-height:1.08}
-.ceremony-location,.ceremony-event time,.ceremony-action{font-family:'Courier New',monospace;letter-spacing:2px}
-.ceremony-location{margin-top:17px;font-size:14px}
-.ceremony-event time{margin-top:11px;font-size:16px}
-.ceremony-action{margin-top:25px;padding-bottom:5px;border-bottom:1px solid currentColor;font-size:11px}
-@media(hover:hover) and (pointer:fine){.ceremony-event:hover,.ceremony-event:focus-visible{color:#a94b4b;background:#0b0808e8;outline:none}}
-@media(hover:none),(pointer:coarse){.ceremony-event{touch-action:manipulation;-webkit-touch-callout:none;transition:none}.ceremony-event:active{color:#a94b4b;background:#0b0808e8}}
-@media(max-width:650px){.ceremony-event{padding:30px 16px 32px}.ceremony-name{font-size:clamp(42px,13vw,58px)}.ceremony-location{font-size:11px;letter-spacing:1.5px}.ceremony-event time{font-size:13px}.ceremony-action{font-size:10px}}
+/* Compact vertical list of upcoming live rituals. */
+.ceremonies-list{display:flex;flex-direction:column;align-items:center;gap:16px;width:100%}
+.ceremony-event{display:flex;flex-direction:column;align-items:center;width:min(480px,100%);padding:20px 24px 21px;border:1px solid #b8b8b875;background:#080808df;color:var(--ivory);font-family:'Courier New',monospace;text-align:center;transition:color .16s ease,border-color .16s ease,background-color .16s ease}
+.ceremony-name{font-size:17px;line-height:1.45;letter-spacing:1.5px}
+.ceremony-location,.ceremony-event time{font-size:13px;line-height:1.45;letter-spacing:2px;color:inherit}
+.ceremony-location{margin-top:12px}
+.ceremony-event time{margin-top:5px}
+.ceremony-event:hover,.ceremony-event:focus-visible{color:#a94b4b;border-color:#a94b4b;background:#0d0808ed;outline:none}
+@media(hover:none),(pointer:coarse){.ceremony-event{touch-action:manipulation;-webkit-touch-callout:none;transition:none}.ceremony-event:hover{color:var(--ivory);border-color:#b8b8b875;background:#080808df}.ceremony-event:active{color:#a94b4b;border-color:#a94b4b;background:#0d0808ed}}
+@media(max-width:650px){.ceremonies-list{width:min(88vw,430px);margin:auto}.ceremony-event{padding:18px 14px 19px}.ceremony-name{font-size:15px}.ceremony-location,.ceremony-event time{font-size:11px;letter-spacing:1.5px}}
