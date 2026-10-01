@@ -1,0 +1,6 @@
+.kingdom-dialog{padding:0;border:0;max-width:none;max-height:none;width:100vw;height:100dvh;margin:0;background:#000;overflow:hidden;color:#fff}
+.kingdom-dialog::backdrop{background:#000}
+.kingdom-dialog iframe{display:block;border:0;width:100%;height:100%;background:#000}
+.kingdom-close{position:absolute;top:8px;right:12px;z-index:3;width:38px;height:38px;padding:0;border:1px solid #555;background:#080808;color:#eee;font:30px/1 Georgia,serif;cursor:pointer}
+.kingdom-close:hover,.kingdom-close:focus-visible{color:#ce2035;border-color:#ce2035}
+@media(hover:hover) and (pointer:fine){#home .artist-logo[role=button]{cursor:pointer}#home .artist-logo[role=button]:focus-visible{outline:1px solid #b51a2e;outline-offset:8px}}
