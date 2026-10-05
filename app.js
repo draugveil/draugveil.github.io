@@ -3,7 +3,7 @@ const menu=[...document.querySelectorAll('.game-menu a')];
 let keyboardNavigation=false;
 document.addEventListener('pointerdown',()=>{keyboardNavigation=false},{passive:true});
 document.addEventListener('keydown',()=>{keyboardNavigation=true},true);
-function route(focus=false){let id=location.hash.slice(1)||'home';if(!screens.some(s=>s.id===id))id='home';screens.forEach(s=>s.hidden=s.id!==id);document.body.classList.toggle('home-open',id==='home');document.title=id==='home'?'Draugveil':`${id} — Draugveil`;window.scrollTo(0,0);if(focus&&keyboardNavigation)(id==='home'?menu[0]:document.querySelector(`#${id} .back`)).focus({preventScroll:true})}
+function route(focus=false){let id=location.hash.slice(1)||'home';if(!screens.some(s=>s.id===id))id='home';screens.forEach(s=>s.hidden=s.id!==id);document.body.classList.toggle('home-open',id==='home');document.title=id==='home'?'Draugveil':`${id} - Draugveil`;window.scrollTo(0,0);if(focus&&keyboardNavigation)(id==='home'?menu[0]:document.querySelector(`#${id} .back`)).focus({preventScroll:true})}
 const blackout=document.createElement('div');
 blackout.className='section-blackout';blackout.setAttribute('aria-hidden','true');
 document.body.append(blackout);
